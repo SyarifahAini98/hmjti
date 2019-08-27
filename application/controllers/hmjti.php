@@ -25,7 +25,6 @@ class hmjti extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('header');
 		$data = array(
 		'data1'=>$this->Model_Berita->get_berita());
 		$this->load->view('index',$data);
@@ -44,7 +43,6 @@ class hmjti extends CI_Controller {
 	}
 
 	public function detail_berita($id_berita){
-		$this->load->view('header');
 		$data = array(
 				'data'=>$this->Model_Berita->get_detail_berita($id_berita),
 				'data1'=>$this->Model_Berita->get_berita());
