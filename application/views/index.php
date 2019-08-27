@@ -282,7 +282,7 @@
                     </div>
                     <div class="blog-news-details">
                       <p><?php echo substr($row->isi,0,200).' ...'; ?></p>
-                      <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Baca Selengkapnya <i
+                      <a class="blog-more-btn" href="<?= base_url('hmjti/detail_berita/'.$row->id_berita);?>">Baca Selengkapnya <i
                           class="fa fa-long-arrow-right"></i></a>
                     </div>
                   </article>

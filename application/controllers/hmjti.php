@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Hmjti extends CI_Controller {
+class hmjti extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -32,10 +32,11 @@ class Hmjti extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public function detail_berita(){
+	public function detail_berita($id_berita){
 		$this->load->view('header');
 		$data = array(
-		'data1'=>$this->Model_Berita->get_berita());
+				'data'=>$this->Model_Berita->get_detail_berita($id_berita),
+				'data1'=>$this->Model_Berita->get_berita());
 		$this->load->view('detail_berita',$data);
 		$this->load->view('footer');
 	}
