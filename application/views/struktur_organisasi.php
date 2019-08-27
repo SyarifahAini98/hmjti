@@ -1,3 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HMJTI</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/icon" href="<?php echo base_url('assets/images/favicon.ico');?>" />
+  <!-- Font Awesome -->
+  <link href="<?php echo base_url('assets/css/font-awesome.css');?>" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="<?php echo base_url('assets/css/bootstrap.css');?>" rel="stylesheet">
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slick.css');?>" />
+  <!-- Fancybox slider -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/jquery.fancybox.css');?>" type="text/css" media="screen" />
+  <!-- Animate css -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/animate.css');?>" />
+  <!-- Progress bar  -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap-progressbar-3.3.4.css');?>" />
+  <!-- Theme color -->
+  <link id="switcher" href="<?php echo base_url('assets/css/theme-color/default-theme.css');?>" rel="stylesheet">
+
+  <!-- Main Style -->
+  <link href="<?php echo base_url('assets/style.css');?>" rel="stylesheet">
+
+  <!-- Fonts -->
+
+  <!-- Open Sans for body font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- Lato for Title -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header -->
+  <header id="header">
+    <!-- header top search -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+            <input type="text" placeholder="Ketikkan kata kunci disini dan tekan Enter..." name="s" id="m_search"
+              style="display: inline-block;">
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- BEGIN MENU -->
+    <section id="menu-area">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- LOGO -->
+            <!-- IMG BASED LOGO  -->
+            <a class="navbar-brand" href="index.php"><img src="<?php echo base_url('assets/images/polije.png');?>" alt="logo" width="60px" height="60px"></a>
+            <a class="navbar-brand" href="index.php"><img src="<?php echo base_url('assets/images/HMJ TI LOGO.png');?>" alt="logo" width="50px" height="60px"></a>
+            <!-- TEXT BASED LOGO -->
+            <a class="navbar-brand" href="index.php">HIMPUNAN MAHASISWA<br><H4>JURUSAN TEKNOLOGI INFORMASI</H4></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+              <li><a href="index.php">Beranda</a></li>
+              <li><a href="<?= base_url('hmjti/berita');?>">Berita</a></li>
+              <li><a href="<?= base_url('hmjti/event');?>">Event</a></li>
+              <li class="active"><a href="<?= base_url('hmjti/struktur_organisasi');?>">Struktur Organisasi</a></li>
+              <li><a href="<?= base_url('hmjti/tentang_kami');?>">Tentang Kami</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+          <a href="#" id="search-icon">
+            <i class="fa fa-search">
+            </i>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <!-- END MENU -->
   <!-- Start single page header -->
   <section id="single-page-header">
     <div class="overlay">
@@ -6,7 +110,7 @@
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="single-page-header-left">
               <h2>PROFIL HMJTI</h2>
-              <p>PROFIL HMJTI</p>
+              <p></p>
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
@@ -56,91 +160,243 @@
           <div class="title-area">
             <h2 class="title">Struktur Organisasi HMJ TI 2019</h2>
             <span class="line"></span>
-            <p>Muhammad Andys Saputra<br>
+            <p><img src="<?= base_url('assets/');?>images/images_foto/Muhammad Andys Saputra.png" alt="image"><br>
+              Muhammad Andys Saputra<br>
               Ketua HMJTI</p>
+            <p><img src="<?= base_url('assets/');?>images/images_foto/Lintang Baskoro Cahyo.JPG" alt="image"><br>
+              Lintang Baskoro Cahyo<br>
+              Wakil Ketua HMJ TI</p>
           </div>
         </div>
+        <div class="col-md-12"><hr></div>
         <div class="col-md-12">
           <div class="service-content">
             <div class="row">
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-desktop service-icon"></i>
-                  <h4 class="service-title">Web Development</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Nur Widiyanti.png" alt="image"><br>
+              Nur Widiyanti<br>Sekretaris 1</p>
                 </div>
               </div>
               <!-- End single service -->
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-paw service-icon"></i>
-                  <h4 class="service-title">Digital Design</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Rizky Nurwinda.png" alt="image"><br>
+              Rizky Nurwinda<br>Sekretaris 2</p>
                 </div>
               </div>
               <!-- End single service -->
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-magic service-icon"></i>
-                  <h4 class="service-title">Marketing</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Ellen Melinda Putri A.S..png" alt="image"><br>
+              Ellen Melinda Putri A.S.<br>Bendahara</p>
+                </div>
+              </div>
+              <!-- End single service -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12"><hr></div>
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Lafic Imarega Dwiputra.JPG" alt="image"><br>
+              Lafic Imarega Dwiputra (CO)<br>DEP. Administasi</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-6">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Diana Maulidiyyah.png" alt="image"><br>
+              Diana Maulidiyyah (CO)<br>Biro Kesekretariatan</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-6">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/An Nisa Safitri.png" alt="image"><br>
+              An Nisa Safitri<br>Biro Kesekretariatan</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Deni Hidayatullah.png" alt="image"><br>
+              Deni Hidayatullah (CO)<br>Biro Sarpras</p>
+                </div>
+              </div>
+              <!-- End single service -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12"><hr></div>
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Putri Yayang Yulianti.png" alt="image"><br>
+              Putri Yayang Yulianti (CO)<br>DEP. Keilmuan</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Agung Wahyu Gunawan.png" alt="image"><br>
+              Agung Wahyu Gunawan (CO)<br>Biro SI</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-6">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Moh. Fani Fadilah.png" alt="image"><br>
+              Moh. Fani Fadilah (CO)<br>Biro Multimedia</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-6">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Achmad Ghalib Ramadhan A..JPG" alt="image"><br>
+              Achmad Ghalib Ramadhan A.<br>Biro Multimedia</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/M. Hanafi Abror.png" alt="image"><br>
+              M. Hanafi Abror (CO)<br>Biro IT Support</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Muhammad Kholil.png" alt="image"><br>
+              Muhammad Kholil (CO)<br>Biro Hardware</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Irvan Junaidi.png" alt="image"><br>
+              Irvan Junaidi (CO)<br>Biro Game Development</p>
+                </div>
+              </div>
+              <!-- End single service -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12"><hr></div>
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Novita Ayu Agustin.png" alt="image"><br>
+              Novita Ayu Agustin (CO)<br>DEP. Kewirausahaan</p>
                 </div>
               </div>
               <!-- End single service -->
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-shopping-cart service-icon"></i>
-                  <h4 class="service-title">E-commerce</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Okta Rohmatun N..png" alt="image"><br>
+              Okta Rohmatun N. (CO)<br>Biro Pengembangan KWU</p>
                 </div>
               </div>
               <!-- End single service -->
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-mobile service-icon"></i>
-                  <h4 class="service-title">App Development</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Mega Silvia.png" alt="image"><br>
+              Mega Silvia (CO)<br>Biro Usaha Mandiri</p>
                 </div>
               </div>
               <!-- End single service -->
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-rocket service-icon"></i>
-                  <h4 class="service-title">S.E.O</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Imron Sholehuddin.png" alt="image"><br>
+              Imron Sholehuddin<br>Biro Pengembangan KWU</p>
                 </div>
               </div>
               <!-- End single service -->
-                <!-- Start single service -->
-              <div class="col-md-4 col-sm-6">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12"><hr></div>
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              <!-- Start single service -->
+              <div class="col-md-12">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-desktop service-icon"></i>
-                  <h4 class="service-title">Web Development</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/David Bristi Antara.png" alt="image"><br>
+              David Bristi Antara (CO)<br>DEP. Perhubungan</p>
                 </div>
               </div>
               <!-- End single service -->
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-paw service-icon"></i>
-                  <h4 class="service-title">Digital Design</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Ratna Dwi K. S..png" alt="image"><br>
+              Ratna Dwi K. S.<br>Biro Internal TIF</p>
                 </div>
               </div>
               <!-- End single service -->
               <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
-                  <i class="fa fa-magic service-icon"></i>
-                  <h4 class="service-title">Marketing</h4>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Aidatul Fakhirah.png" alt="image"><br>
+              Aidatul Fakhirah<br>Biro Internal MIF</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Evita Rizky Maharani S..png" alt="image"><br>
+              Evita Rizky Maharani S.<br>Biro Internal TKK</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-12">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Rizki Widya Pratama.png" alt="image"><br>
+              Rizki Widya Pratama<br>Biro Internal TIF Bondowoso</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-6">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Akbar Maulana T. K..png" alt="image"><br>
+              Akbar Maulana T. K. (CO)<br>Biro Kominfo</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-6">
+                <div class="single-service wow zoomIn">
+                  <p style="text-align: center;"><img src="<?= base_url('assets/');?>images/images_foto/Mochamad Satria Maulana.png" alt="image"><br>
+              Mochamad Satria Maulana<br>Biro Kominfo</p>
                 </div>
               </div>
               <!-- End single service -->
@@ -151,72 +407,3 @@
     </div>
   </section>
   <!-- End Service -->
-
-  <!-- Start subscribe us -->
-  <section id="subscribe">
-    <div class="subscribe-overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="subscribe-area">
-              <h2 class="wow fadeInUp">Subscribe Newsletter</h2>
-              <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                <input type="text" placeholder="Enter Your E-mail..">
-                <button class="subscribe-btn" type="submit">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End subscribe us -->
-
-  <!-- Start footer -->
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <div class="footer-left">
-            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <div class="footer-right">
-            <a href="index.html"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- End footer -->
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <!-- Bootstrap -->
-  <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
-  <!-- Slick Slider -->
-  <script type="text/javascript" src="<?php echo base_url('assets/js/slick.js');?>"></script>    
-  <!-- mixit slider -->
-  <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.mixitup.js');?>"></script>
-  <!-- Add fancyBox -->        
-  <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.fancybox.pack.js');?>"></script>
- <!-- counter -->
-  <script src="<?php echo base_url('assets/js/waypoints.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/jquery.counterup.js');?>"></script>
-  <!-- Wow animation -->
-  <script type="text/javascript" src="<?php echo base_url('assets/js/wow.js">');?>"></script> 
-  <!-- progress bar   -->
-  <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-progressbar.js');?>"></script>  
-  
- 
-  <!-- Custom js -->
-  <script type="text/javascript" src="<?php echo base_url('assets/js/custom.js');?>"></script>
-    
-  </body>
-</html>

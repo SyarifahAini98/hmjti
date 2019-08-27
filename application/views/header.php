@@ -54,7 +54,7 @@
       <div class="container">
         <form action="">
           <div id="search">
-            <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search"
+            <input type="text" placeholder="Ketikkan kata kunci disini dan tekan Enter..." name="s" id="m_search"
               style="display: inline-block;">
             <button type="submit">
               <i class="fa fa-search"></i>
@@ -88,9 +88,9 @@
             <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
               <li class="active"><a href="index.php">Beranda</a></li>
               <li><a href="<?= base_url('hmjti/berita');?>">Berita</a></li>
-              <li><a href="<?= base_url('event');?>">Event</a></li>
-              <li><a href="<?= base_url('struktur_organisasi');?>">Struktur Organisasi</a></li>
-              <li><a href="<?= base_url('tentang_kami');?>">Tentang Kami</a></li>
+              <li><a href="<?= base_url('hmjti/event');?>">Event</a></li>
+              <li><a href="<?= base_url('hmjti/struktur_organisasi');?>">Struktur Organisasi</a></li>
+              <li><a href="<?= base_url('hmjti/tentang_kami');?>">Tentang Kami</a></li>
             </ul>
           </div>
           <!--/.nav-collapse -->

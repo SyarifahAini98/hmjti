@@ -10,17 +10,15 @@
               <br><p>
                 Jl. Mastrip PO.BOX 164 Jember
                 Jember Jawa Timur 68101 Indonesia
-                <br><i class="fa fa-mobile">+62 0999 4043</i>
+                <br><i class="fa fa-mobile"> 0331-333532</i>
+                <br><i class="fa fa-fax"> 0331-333531</i>
               </p>
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
             <div class="footer-right">
-              <a href="index.html"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
               <a href="#"><i class="fa fa-google-plus"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-pinterest"></i></a>
+              <a href="https://www.instagram.com/hmjti_polije/"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
         </div>

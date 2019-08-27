@@ -55,18 +55,25 @@ class hmjti extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public function event(){
-		$this->load->view('event');
+	public function event()
+	{
+		$data = array(
+		'data1'=>$this->Model_Berita->get_berita());
+		$this->load->view('event',$data);
+		$data = array(
+		'data1'=>$this->Model_Berita->get_berita());
+		$this->load->view('side_bar',$data);
+		$this->load->view('footer');
 	}
 
-	public function struktur_pengurus(){
-		$this->load->view('header');
+	public function struktur_organisasi(){
 		$this->load->view('struktur_organisasi');
 		$this->load->view('footer');
 	}
 
-	public function about(){
-		$this->load->view('kritik_saran');
+	public function tentang_kami(){
+		$this->load->view('tentang_kami');
+		$this->load->view('footer');
 	}
 
 }
