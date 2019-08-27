@@ -109,7 +109,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="single-page-header-left">
-              <h2>PROFIL HMJTI</h2>
+              <h2>STRUKTUR ORGANISASI</h2>
               <p></p>
             </div>
           </div>
@@ -130,6 +130,9 @@
   <section id="service">
     <div class="container">
       <div class="row">
+        <div class="col-md-12">
+          <center><img src="<?= base_url('assets/');?>images/struktur.jpg" alt="image" style="height: 500px;width: 750px;"></center><br>
+        </div>
         <div class="col-md-12">
           <div class="title-area">
             <h2 class="title">Visi</h2>

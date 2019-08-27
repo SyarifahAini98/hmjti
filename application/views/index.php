@@ -119,7 +119,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                   <div class="slider-img wow fadeInUp">
-                    <img src="<?php echo base_url('assets/images/person2.png');?>" alt="business man">
+                    <img src="<?php echo base_url('assets/images/Ketua HMJ TI.png');?>" alt="business man">
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                   <div class="slider-img wow fadeInUp">
-                    <img src="<?php echo base_url('assets/images/person1.png');?>" alt="business man">
+                    <img src="<?php echo base_url('assets/images/Wakil Ketua HMJ TI.png');?>" alt="business man">
                   </div>
                 </div>
               </div>
