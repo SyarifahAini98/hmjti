@@ -79,14 +79,14 @@
             </button>
             <!-- LOGO -->
             <!-- IMG BASED LOGO  -->
-            <a class="navbar-brand" href="index.php"><img src="<?php echo base_url('assets/images/polije.png');?>" alt="logo" width="60px" height="60px"></a>
-            <a class="navbar-brand" href="index.php"><img src="<?php echo base_url('assets/images/HMJ TI LOGO.png');?>" alt="logo" width="50px" height="60px"></a>
+            <a class="navbar-brand" href="<?= base_url('hmjti');?>"><img src="<?php echo base_url('assets/images/polije.png');?>" alt="logo" width="60px" height="60px"></a>
+            <a class="navbar-brand" href="<?= base_url('hmjti');?>"><img src="<?php echo base_url('assets/images/HMJ TI LOGO.png');?>" alt="logo" width="50px" height="60px"></a>
             <!-- TEXT BASED LOGO -->
-            <a class="navbar-brand" href="index.php">HIMPUNAN MAHASISWA<br><H4>JURUSAN TEKNOLOGI INFORMASI</H4></a>
+            <a class="navbar-brand" href="<?= base_url('hmjti');?>">HIMPUNAN MAHASISWA<br><H4>JURUSAN TEKNOLOGI INFORMASI</H4></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-              <li><a href="index.php">Beranda</a></li>
+              <li><a href="<?= base_url('hmjti');?>">Beranda</a></li>
               <li><a href="<?= base_url('hmjti/berita');?>">Berita</a></li>
               <li><a href="<?= base_url('hmjti/event');?>">Event</a></li>
               <li class="active"><a href="<?= base_url('hmjti/struktur_organisasi');?>">Struktur Organisasi</a></li>
