@@ -89,7 +89,7 @@
               <li class="active"><a href="index.php">Beranda</a></li>
               <li><a href="<?= base_url('hmjti/berita');?>">Berita</a></li>
               <li><a href="<?= base_url('event');?>">Event</a></li>
-              <li><a href="<?= base_url('struktur_pengurus');?>">Struktur Pengurus</a></li>
+              <li><a href="<?= base_url('struktur_organisasi');?>">Struktur Organisasi</a></li>
               <li><a href="<?= base_url('tentang_kami');?>">Tentang Kami</a></li>
             </ul>
           </div>

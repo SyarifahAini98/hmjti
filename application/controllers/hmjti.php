@@ -32,12 +32,26 @@ class hmjti extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function berita()
+	{
+		$data = array(
+		'data1'=>$this->Model_Berita->get_berita());
+		$this->load->view('berita',$data);
+		$data = array(
+		'data1'=>$this->Model_Berita->get_berita());
+		$this->load->view('side_bar',$data);
+		$this->load->view('footer');
+	}
+
 	public function detail_berita($id_berita){
 		$this->load->view('header');
 		$data = array(
 				'data'=>$this->Model_Berita->get_detail_berita($id_berita),
 				'data1'=>$this->Model_Berita->get_berita());
 		$this->load->view('detail_berita',$data);
+		$data = array(
+		'data1'=>$this->Model_Berita->get_berita());
+		$this->load->view('side_bar',$data);
 		$this->load->view('footer');
 	}
 
@@ -45,8 +59,10 @@ class hmjti extends CI_Controller {
 		$this->load->view('event');
 	}
 
-	public function pengurus(){
-		$this->load->view('struktur_pengurus');
+	public function struktur_pengurus(){
+		$this->load->view('header');
+		$this->load->view('struktur_organisasi');
+		$this->load->view('footer');
 	}
 
 	public function about(){
