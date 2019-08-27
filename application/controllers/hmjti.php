@@ -32,8 +32,12 @@ class Hmjti extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public function news(){
-		$this->load->view('kegiatan');
+	public function detail_berita(){
+		$this->load->view('header');
+		$data = array(
+		'data1'=>$this->Model_Berita->get_berita());
+		$this->load->view('detail_berita',$data);
+		$this->load->view('footer');
 	}
 
 	public function event(){

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,10 +87,10 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
               <li class="active"><a href="index.php">Beranda</a></li>
-              <li><a href="<?php echo site_url('hmjti/news/');?>">Berita</a></li>
-              <li><a href="<?php echo site_url('hmjti/event/');?>">Event</a></li>
-              <li><a href="<?php echo site_url('hmjti/pengurus/')?>">Struktur Pengurus</a></li>
-              <li><a href="<?php echo site_url('hmjti/about/');?>">Tentang Kami</a></li>
+              <li><a href="<?= base_url('hmjti/berita');?>">Berita</a></li>
+              <li><a href="<?= base_url('event');?>">Event</a></li>
+              <li><a href="<?= base_url('struktur_pengurus');?>">Struktur Pengurus</a></li>
+              <li><a href="<?= base_url('tentang_kami');?>">Tentang Kami</a></li>
             </ul>
           </div>
           <!--/.nav-collapse -->
