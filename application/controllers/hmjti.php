@@ -21,11 +21,15 @@ class Hmjti extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper(array('url'));
-		$this->load->model('Model_Index');
+		$this->load->model('Model_Berita');
 	}
 	public function index()
 	{
-		$this->load->view('index');
+		$this->load->view('header');
+		$data = array(
+		'data1'=>$this->Model_Berita->get_berita());
+		$this->load->view('index',$data);
+		$this->load->view('footer');
 	}
 
 	public function news(){
