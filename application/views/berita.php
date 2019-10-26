@@ -129,7 +129,7 @@
                 <div class="col-md-8">
                   <div class="blog-archive-left">
                     <?php
-                    $no=1;
+                    $no=$this->uri->segment('3')+1;
                     foreach ($data1 as $row):
                     ?>
                     <!-- Start blog news single -->
@@ -152,14 +152,9 @@
                     endforeach;?>
                     <!-- Start blog pagination -->
                     <div class="blog-pagination">
-                      <ul class="pagination-nav">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                      </ul>
+                     
+                        <?php echo $this->pagination->create_links(); ?>
+                    
                     </div>
                   </div>
                 </div>

@@ -33,13 +33,61 @@ class hmjti extends CI_Controller {
 
 	public function berita()
 	{
+		$jumlah_data	= $this->Model_Berita->jumlah();
+		$this->load->library('pagination');
+
+		$config=array(
+			'base_url'=>base_url().'hmjti/berita/',
+			'total_rows'=>$jumlah_data,
+			'per_page'=>1,
+
+			'full_tag_open'=>'<ul class="pagination-nav">',
+			'first_link'=>'First',
+			'last_link'=>'Last',
+			'full_tag_close'=>'</ul>',
+
+			'next_tag_open'=>'<li>',
+			'next_link'=>'Next',
+			'next_tag_close'=>'</li>',
+
+			'prev_tag_open'=>'<li>',
+			'prev_link'=>'Prev',
+			'next_tag_open'=>'</li>',
+
+			'num_tag_open'=>'<li>',
+			'num_tag_close'=>'</li>'
+		);
+		/*
+		$config['base_url']=base_url().'hmjti/berita/';
+		$config['total_rows'] = $jumlah_data;
+		$config['per_page'] = 1;
+		$config['first_link'] = 'First';
+		$config['last_link'] = 'Last';
+		$config['next_link'] = 'Next';
+		$config['prev_link'] = 'Prev';
+		$config['next_tag_open']='<li>';
+		$config['next_tag_close']='</li>';
+		$config['full_tag_open'] = ' <ul class="pagination-nav">';
+		$config['full_tag_close'] = ' </ul>';
+		$config['prev_tag_open']='<li>';
+		$config['prev_tag_close']='</li>';
+		$config['num_tag_open']='<li>';
+		$config['num_tag_close']='</li>';
+		*/
+		$from = $this->uri->segment(3);
+		$this->pagination->initialize($config);
+		$data = array(
+			'data1'=>$this->Model_Berita->berita($config['per_page'],$from)
+		);
+		$this->load->view('berita',$data);
+		$this->load->view('side_bar',$data);
+		$this->load->view('footer');
+		/*
 		$data = array(
 		'data1'=>$this->Model_Berita->get_berita());
 		$this->load->view('berita',$data);
-		$data = array(
-		'data1'=>$this->Model_Berita->get_berita());
 		$this->load->view('side_bar',$data);
-		$this->load->view('footer');
+		$this->load->view('footer');*/
 	}
 
 	public function detail_berita($id_berita){

@@ -182,7 +182,7 @@
                     </div>
                   </div> -->
                   <!-- Start Comment box -->
-                  <!-- <div class="comments-box-area">
+                   <div class="comments-box-area">
                     <h2>Leave a Comment</h2>
                     <p>Your email address will not be published.</p>
                     <form action="" class="comments-form">
@@ -197,6 +197,6 @@
                       </div>
                       <button class="comment-btn">Submit Comment</button>
                     </form>
-                  </div> -->
+                  </div> 
                 </div>
               </div>
