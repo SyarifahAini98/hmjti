@@ -119,7 +119,7 @@ class hmjti extends CI_Controller {
 		$this->load->library('pagination');
 
 		$config=array(
-			'base_url'=>base_url().'hmjti/berita/',
+			'base_url'=>base_url().'hmjti/event/',
 			'total_rows'=>$jumlah_data,
 			'per_page'=>1,
 
