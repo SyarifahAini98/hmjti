@@ -15,8 +15,8 @@
                     <div class="sidebar-widget">
                       <h4 class="widget-title">Kategori</h4>
                         <ul class="widget-catg">
-                          <li><a href="#">Berita</a></li>
-                          <li><a href="#">Event</a></li>
+                          <li><a href="<?= base_url('hmjti/berita');?>">Berita</a></li>
+                          <li><a href="<?= base_url('hmjti/event');?>">Event</a></li>
                         </ul>
                     </div>
                     <div class="sidebar-widget">

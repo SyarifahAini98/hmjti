@@ -10,10 +10,12 @@ class Model_Berita extends CI_Model {
 		$query = $this->db->query("SELECT * FROM tbl_berita WHERE id_berita='$id_berita'");
 		return $query->result();
 	}
-	function berita($number,$offset){
+	function berita($id,$number,$offset){
+		$this->db->where($id);
 		return $query = $this->db->get('tbl_berita',$number,$offset)->result();
 	}
-	function jumlah(){
+	function jumlah($id){
+		$this->db->where($id);
 		return $query = $this->db->get('tbl_berita')->num_rows();
 	}
 }
