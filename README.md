@@ -1,2 +1,1 @@
-# CBT
-APLIKASI COMPUTER BASED TEST BERBASIS WEB DI SMKN 3 JEMBER MENGGUNAKAN ALGORITMA FUZZY
+# Web HMJ TI (Himpunan Mahasiswa Jurusan Teknologi Informasi) Politeknik Negeri Jember
