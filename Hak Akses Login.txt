@@ -1,0 +1,6 @@
+﻿Login User      http://localhost/hmjti/auth
+- Username	: andys
+- Password	: 123
+atau
+- Username	: lintang
+- Password	: 123
